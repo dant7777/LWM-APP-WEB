@@ -101,3 +101,20 @@ Toute modification structurelle doit :
 3. Être documentée dans PROJECT_RULES.md si nécessaire
 4. Être commitée immédiatement
 
+## 🧩 Système d’affectation (Phase 1)
+
+Le projet utilise un système d’affectation générique.
+
+Un membre peut avoir plusieurs fonctions.
+
+Une affectation contient :
+
+- Le membre concerné
+- Le niveau territorial concerné
+- Le département (optionnel)
+- La fonction
+
+Ce système évite la multiplication de champs spécifiques
+(pasteur_zone, responsable_finance_district, etc.).
+
+Il garantit flexibilité et évolutivité.
