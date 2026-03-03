@@ -118,3 +118,28 @@ Ce système évite la multiplication de champs spécifiques
 (pasteur_zone, responsable_finance_district, etc.).
 
 Il garantit flexibilité et évolutivité.
+
+## 🧩 Modèle d'affectation – Phase 1
+
+Le système utilise une entité Affectation simple et explicite.
+
+Champs conceptuels :
+
+- membre
+- fonction
+- département (optionnel)
+- continent (nullable)
+- zone (nullable)
+- pays (nullable)
+- district (nullable)
+- assemblee (nullable)
+
+Règle métier :
+
+Une affectation concerne un seul niveau territorial à la fois.
+
+Ce choix privilégie :
+- la lisibilité
+- la simplicité
+- la maintenabilité
+- l'absence de sur-ingénierie
