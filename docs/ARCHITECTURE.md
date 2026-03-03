@@ -143,3 +143,32 @@ Ce choix privilégie :
 - la simplicité
 - la maintenabilité
 - l'absence de sur-ingénierie
+
+## 👤 Modèle Membre – Phase 1
+
+Un Membre représente une personne réelle dans l'église.
+
+Un membre peut exister sans avoir de compte utilisateur.
+
+Un membre peut avoir plusieurs affectations.
+
+Champs conceptuels :
+
+Identité :
+- nom
+- prenom
+- sexe
+- date_naissance
+
+Contact :
+- telephone
+- email
+- adresse
+
+Appartenance :
+- assemblee (obligatoire)
+- date_integration
+- statut
+
+Technique :
+- utilisateur (optionnel)
