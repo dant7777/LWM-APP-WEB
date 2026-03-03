@@ -1,5 +1,14 @@
 ﻿# ARCHITECTURE – LWM-APP-WEB
 
+## 🎯 Orientation officielle du projet
+
+LWM-APP-WEB est un outil interne destiné à une seule église locale.
+
+Il ne s'agit pas d'une plateforme SaaS.
+Il n'y a pas de multi-tenant.
+Il n'y a pas de séparation par client.
+
+L'architecture doit rester simple, maintenable et évolutive uniquement dans le cadre d'une seule organisation.
 ## 🎯 Objectif
 
 Projet évolutif, structuré, maintenable sur plusieurs années.

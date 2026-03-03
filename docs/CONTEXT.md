@@ -41,3 +41,9 @@ Ne jamais supprimer sans validation.
 Correction minimale uniquement.  
 Toujours commit avant modification risquée.  
 
+## Orientation officielle
+
+Projet interne pour une seule église locale.
+Développement progressif par phases.
+Complexité contrôlée.
+
