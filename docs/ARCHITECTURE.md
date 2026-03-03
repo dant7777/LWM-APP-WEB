@@ -172,3 +172,15 @@ Appartenance :
 
 Technique :
 - utilisateur (optionnel)
+
+Statut possible :
+
+- Actif
+- Inactif
+- Décédé
+- Transféré
+
+Le statut influence :
+- l'affichage dans le dashboard
+- l'éligibilité aux affectations
+- les statistiques futures
