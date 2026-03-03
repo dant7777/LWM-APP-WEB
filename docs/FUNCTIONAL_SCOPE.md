@@ -24,6 +24,32 @@ Modules :
 - Permissions
 - Dashboard simple
 
+## Structure organisationnelle officielle
+
+Structure territoriale :
+
+Continent
+ └── Zone
+      └── Pays
+           └── District
+                └── Assemblée
+                     └── Membres
+
+Départements :
+
+- Créables dynamiquement
+- Présents à tous les niveaux
+- Transversaux
+
+Fonctions :
+
+- Un membre peut avoir plusieurs fonctions
+- Une fonction est toujours liée :
+  - à un niveau territorial
+  - et éventuellement à un département
+
+---
+
 Critères de validation :
 
 - Architecture respectée
