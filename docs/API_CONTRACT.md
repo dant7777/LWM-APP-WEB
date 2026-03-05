@@ -56,3 +56,18 @@ L'API suit une architecture REST simple.
 - JSON uniquement
 - endpoints cohérents
 - aucune logique métier dans les vues
+
+# Authentification
+
+Le projet utilise une authentification JWT.
+
+Endpoints :
+
+POST /api/auth/login/
+POST /api/auth/refresh/
+POST /api/auth/logout/
+GET  /api/auth/me/
+
+Les requêtes authentifiées doivent envoyer :
+
+Authorization: Bearer <access_token>
