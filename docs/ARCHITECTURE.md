@@ -184,3 +184,28 @@ Le statut influence :
 - l'affichage dans le dashboard
 - l'éligibilité aux affectations
 - les statistiques futures
+
+## 🔐 Système de permissions – Phase 1
+
+Le projet utilise un système mixte.
+
+Deux niveaux existent :
+
+### Rôles techniques
+
+Contrôlent l'accès au système.
+
+Exemples :
+- SuperAdmin
+- Admin
+- Gestionnaire
+- Utilisateur
+
+### Fonctions métier
+
+Les responsabilités dans l'église sont gérées via le système d'Affectation.
+
+Une fonction est liée :
+- à un membre
+- à un niveau territorial
+- éventuellement à un département
