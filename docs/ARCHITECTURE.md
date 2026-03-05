@@ -209,3 +209,23 @@ Une fonction est liée :
 - à un membre
 - à un niveau territorial
 - éventuellement à un département
+
+## 🏗 Organisation du backend
+
+Le backend Django est organisé par domaines métier.
+
+Applications principales :
+
+- core
+- users
+- members
+- organisation
+- departments
+- assignments
+- dashboard
+
+Chaque application doit respecter :
+
+- responsabilité claire
+- séparation logique métier / HTTP
+- fichiers < 200 lignes
