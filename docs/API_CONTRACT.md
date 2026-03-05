@@ -71,3 +71,17 @@ GET  /api/auth/me/
 Les requêtes authentifiées doivent envoyer :
 
 Authorization: Bearer <access_token>
+
+## 🐳 Infrastructure
+
+Le projet est déployé avec Docker.
+
+Services :
+
+- frontend : React
+- backend : Django REST API
+- database : PostgreSQL
+
+Chaque service fonctionne dans un conteneur séparé.
+
+La coordination des services est gérée par docker-compose.
