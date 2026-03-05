@@ -229,3 +229,21 @@ Chaque application doit respecter :
 - responsabilité claire
 - séparation logique métier / HTTP
 - fichiers < 200 lignes
+
+## 🌐 Architecture applicative
+
+Le projet utilise une architecture séparée :
+
+Frontend : React  
+Backend : Django REST API  
+Database : PostgreSQL
+
+Communication :
+
+React consomme les endpoints exposés par l’API Django.
+
+Cela permet :
+
+- séparation claire frontend / backend
+- évolution indépendante des couches
+- intégration facile avec Docker
