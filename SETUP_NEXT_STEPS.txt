@@ -1,0 +1,41 @@
+PHASE 1 SETUP
+
+1. Extract this zip into the project root:
+   C:\CODE\DAMF V2
+
+2. Create Django project
+
+cd backend
+django-admin startproject config .
+
+3. Install dependencies
+
+pip install -r requirements.txt
+
+4. Run migrations
+
+python manage.py migrate
+
+5. Create admin
+
+python manage.py createsuperuser
+
+6. Test server
+
+python manage.py runserver
+
+7. Test Docker
+
+docker compose up --build
+
+Next development step:
+
+Create apps:
+
+python manage.py startapp core
+python manage.py startapp users
+python manage.py startapp members
+python manage.py startapp organisation
+python manage.py startapp departments
+python manage.py startapp assignments
+python manage.py startapp dashboard

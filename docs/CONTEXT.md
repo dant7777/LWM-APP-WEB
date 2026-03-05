@@ -47,3 +47,20 @@ Projet interne pour une seule église locale.
 Développement progressif par phases.
 Complexité contrôlée.
 
+
+---
+
+## Progress Update
+
+Backend foundation implemented:
+
+✔ Django project structure  
+✔ Organisation hierarchy models  
+✔ Migrations applied  
+✔ Django REST Framework API  
+✔ Router endpoints for organisation  
+✔ API tested (200 OK)
+
+Next milestone:
+
+Member / Department / Assignment domain models.

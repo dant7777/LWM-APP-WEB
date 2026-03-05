@@ -1,0 +1,10 @@
+After extracting:
+
+cd backend
+django-admin startproject config .
+
+This will create:
+config/
+manage.py
+
+Then move settings into config/settings later.

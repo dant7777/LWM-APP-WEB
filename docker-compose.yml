@@ -1,0 +1,47 @@
+
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: damf_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: damf_db
+      POSTGRES_USER: damf_user
+      POSTGRES_PASSWORD: damf_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    container_name: damf_backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    environment:
+      DB_NAME: damf_db
+      DB_USER: damf_user
+      DB_PASSWORD: damf_password
+      DB_HOST: postgres
+      DB_PORT: 5432
+
+  frontend:
+    build: ./frontend
+    container_name: damf_frontend
+    command: npm run dev -- --host
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

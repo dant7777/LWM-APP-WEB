@@ -247,3 +247,66 @@ Cela permet :
 - séparation claire frontend / backend
 - évolution indépendante des couches
 - intégration facile avec Docker
+---
+
+## Organisation API
+
+Hierarchy implemented via Django models and DRF:
+
+Continent
+  └ Zone
+      └ Country
+          └ District
+              └ Assembly
+
+API endpoints:
+
+/api/continents/
+/api/zones/
+/api/countries/
+/api/districts/
+/api/assemblies/
+
+Stack:
+
+- Django
+- Django REST Framework
+- SQLite (dev)
+- PostgreSQL (Docker)
+- Docker Compose
+
+Architecture layers:
+
+models → serializers → viewsets → routers → API
+
+---
+
+## Organisation API
+
+Hierarchy implemented via Django models and DRF:
+
+Continent
+  └ Zone
+      └ Country
+          └ District
+              └ Assembly
+
+API endpoints:
+
+/api/continents/
+/api/zones/
+/api/countries/
+/api/districts/
+/api/assemblies/
+
+Stack:
+
+- Django
+- Django REST Framework
+- SQLite (dev)
+- PostgreSQL (Docker)
+- Docker Compose
+
+Architecture layers:
+
+models → serializers → viewsets → routers → API
