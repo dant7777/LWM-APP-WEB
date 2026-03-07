@@ -1,52 +1,53 @@
-ï»¿# CONTEXT â€“ LWM-APP-WEB
+# CONTEXT – LWM-APP-WEB
 
-âš  Ce fichier doit Ãªtre mis Ã  jour rÃ©guliÃ¨rement.
+? Ce fichier doit être mis à jour régulièrement.
 
 ---
 
-## ğŸ— Architecture actuelle
+## ?? Architecture actuelle
 
 Backend : Django (structure modulaire)
-Frontend : React (sÃ©paration composants / logique)
-Base de donnÃ©es : PostgreSQL via Docker
+Frontend : React (séparation composants / logique)
+Base de données : PostgreSQL via Docker
 
 ---
 
-## ğŸ“Œ DÃ©cisions importantes
+## ?? Décisions importantes
 
 - Structure modulaire par domaine
 - Fichier maximum 200 lignes
 - Correction minimale uniquement
-- Documentation gÃ©nÃ©rÃ©e automatiquement
+- Documentation générée automatiquement
 
 ---
 
-## ğŸ ProblÃ¨mes connus
+## ?? Problèmes connus
 
 (Aucun pour le moment)
 
 ---
 
-## âš  Points sensibles
+## ? Points sensibles
 
-- Respect strict des rÃ¨gles PROJECT_RULES.md
+- Respect strict des règles PROJECT_RULES.md
 - Pas de refactor global
 - Pas de suppression sans validation
 
 ---
 
-## ğŸ” Rappels permanents
+## ?? Rappels permanents
 
-Ne jamais supprimer sans validation.  
-Correction minimale uniquement.  
-Toujours commit avant modification risquÃ©e.  
+Ne jamais supprimer sans validation.
+Correction minimale uniquement.
+Toujours commit avant modification risquée.
+
+---
 
 ## Orientation officielle
 
-Projet interne pour une seule Ã©glise locale.
-DÃ©veloppement progressif par phases.
-ComplexitÃ© contrÃ´lÃ©e.
-
+Projet interne pour une seule église locale.
+Développement progressif par phases.
+Complexité contrôlée.
 
 ---
 
@@ -54,13 +55,24 @@ ComplexitÃ© contrÃ´lÃ©e.
 
 Backend foundation implemented:
 
-âœ” Django project structure  
-âœ” Organisation hierarchy models  
-âœ” Migrations applied  
-âœ” Django REST Framework API  
-âœ” Router endpoints for organisation  
-âœ” API tested (200 OK)
+? Django project structure  
+? Organisation hierarchy models  
+? Organisation API (DRF)  
+? Member domain model  
+? Department domain model  
+? Assignment domain model  
+? API endpoints for members / departments / assignments  
+? Hierarchical filtering for members and assignments  
+? Django admin configuration  
 
-Next milestone:
+API tested successfully.
 
-Member / Department / Assignment domain models.
+---
+
+## Next milestone
+
+Roles / Permissions system implementation.
+
+Then:
+
+Dashboard module.
